@@ -29,8 +29,11 @@ B. Konsep OOP yang digunakan:
    ```bash
    git clone https://github.com/feby-tw/dsaa-group-5.git
 2. Masuk ke folder tugas:
+   ```bash
    cd dsaa-group-5/team-assignment-1
 3. Kompilasi semua file Java:
+   ```bash
    javac *.java
 4. Jalankan program:
+   ```bash
    java Main
