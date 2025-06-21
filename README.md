@@ -31,7 +31,7 @@ B. Konsep OOP yang digunakan:
 2. Masuk ke folder tugas:
    ```bash
    cd dsaa-group-5/team-assignment-1
-3. Kompilasi semua file Java:
+3. Compile semua file Java:
    ```bash
    javac *.java
 4. Jalankan program:
