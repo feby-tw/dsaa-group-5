@@ -2,11 +2,11 @@
 Repository ini berisi kumpulan tugas-tugas pemrograman yang disusun oleh Kelompok 5 dalam rangka memenuhi mata kuliah Data Structure and Algorithm Analysis di Binus Online Learning.
 
 ## Team Member
-   - Feby Tri Wulandari
-   - Dwi Prasetyo
+   - Feby Tri Wulandari [@feby-tw]
+   - Dwi Prasetyo [@uwi0]
    - Maharizky Putri Amalia
    - Jose Agusto Carvalho Widiyanto Dos Santos
-   - Aldrin Rayhan Putra
+   - Aldrin Rayhan Putra [@rayhandrin]
 
 ## Daftar Isi Tugas
 
