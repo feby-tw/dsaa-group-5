@@ -1,12 +1,12 @@
 # Repository "dsaa-group-5"
 Repository ini berisi kumpulan tugas-tugas pemrograman yang disusun oleh Kelompok 5 dalam rangka memenuhi mata kuliah Data Structure and Algorithm Analysis di Binus Online Learning.
 
-## Team Member
-   - Feby Tri Wulandari [@feby-tw]
-   - Dwi Prasetyo [@uwi0]
+## 👥 Team Members
+   - Feby Tri Wulandari [@feby-tw] (https://github.com/feby-tw)
+   - Dwi Prasetyo [@uwi0] (https://github.com/uwi0)
    - Maharizky Putri Amalia
    - Jose Agusto Carvalho Widiyanto Dos Santos
-   - Aldrin Rayhan Putra [@rayhandrin]
+   - Aldrin Rayhan Putra [@rayhandrin] (https://github.com/rayhandrin)
 
 ## Daftar Isi Tugas
 
