@@ -12,11 +12,11 @@ Repository ini berisi kumpulan tugas-tugas pemrograman yang disusun oleh Kelompo
 
 ### 📁 "team-assignment-1" – Sistem Manajemen Perpustakaan
 Implementasi sistem perpustakaan berbasis Object-Oriented Programming (OOP).  
-Fitur yang tersedia meliputi:
+A. Fitur yang tersedia meliputi:
 - Tambah, edit, dan hapus buku (oleh Admin)
 - Peminjaman dan pengembalian buku (oleh Member)
 - Pencarian dan penampilan buku tersedia
-Konsep OOP yang digunakan:
+B. Konsep OOP yang digunakan:
 - Abstraction: melalui class abstrak `User`
 - Inheritance: `Admin` dan `Member` mewarisi `User`
 - Polymorphism: method `interact()` diimplementasikan berbeda
