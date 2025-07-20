@@ -1,3 +1,5 @@
+package queue;
+
 public enum LevelAkses {
     KEPALA_PERPUSTAKAAN,
     PUSTAKAWAN,

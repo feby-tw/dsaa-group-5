@@ -1,3 +1,5 @@
+package queue;
+
 public class Admin extends User {
     private LevelAkses akses;
 

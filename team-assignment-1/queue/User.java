@@ -1,3 +1,5 @@
+package queue;
+
 public abstract class User {
     protected final String userId;
     protected String username;

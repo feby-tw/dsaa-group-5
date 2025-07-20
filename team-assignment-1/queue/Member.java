@@ -1,3 +1,5 @@
+package queue;
+
 public class Member extends User {
     private final String nomorAnggota;
 
