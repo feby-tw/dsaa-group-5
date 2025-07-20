@@ -1,3 +1,5 @@
+package queue;
+
 public class Perpustakaan {
     private final Buku[] daftarBuku;
     private int jumlahBuku = 0;
