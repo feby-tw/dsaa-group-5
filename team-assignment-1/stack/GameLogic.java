@@ -2,14 +2,13 @@ package stack;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Stack;
 
 public class GameLogic {
-    private final Stack<Card> deck = new Stack<>();
+    private final MyStack<Card> deck = new MyStack<>();
     private final ArrayList<Card> playerHand = new ArrayList<>();
-    private final Stack<Card> discardPile = new Stack<>();
-    private final Stack<Action> undoStack = new Stack<>();
-    private final Stack<Action> redoStack = new Stack<>();
+    private final MyStack<Card> discardPile = new MyStack<>();
+    private final MyStack<Action> undoStack = new MyStack<>();
+    private MyStack<Action> redoStack = new MyStack<>();
 
     public GameLogic() {
         setupGame();
@@ -37,7 +36,7 @@ public class GameLogic {
         Card drawnCard = deck.pop();
         playerHand.add(drawnCard);
         undoStack.push(new Action("draw", drawnCard));
-        redoStack.clear();
+        redoStack = new MyStack<>();
         return "You drew the card: " + drawnCard;
     }
 
@@ -48,7 +47,7 @@ public class GameLogic {
         Card discardedCard = playerHand.removeLast();
         discardPile.push(discardedCard);
         undoStack.push(new Action("discard", discardedCard));
-        redoStack.clear();
+        redoStack = new MyStack<>();
         return "You discarded the card: " + discardedCard;
     }
 
