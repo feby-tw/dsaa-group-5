@@ -1,1 +1,31 @@
 Huffman Coding with built-in cahcing implementation using BinarySearchTree, HashTable, and Queue.
+--------------
+Berikut adalah versi formal dari deskripsi sistem yang bisa Anda gunakan untuk README:
+
+---
+
+### Implementasi Huffman Coding dengan Optimalisasi Cache
+
+Sistem ini mengimplementasikan algoritma Huffman Coding untuk kompresi data dengan memanfaatkan kombinasi tiga struktur data buatan sendiri: **HashTable**, **Binary Search Tree (BST)**, dan **Queue**. Arsitektur ini dirancang untuk mengoptimalkan performa dengan mengadopsi mekanisme caching.
+
+#### Struktur Data
+
+* **HashTable**: Digunakan sebagai **cache** untuk menyimpan hasil kompresi. Dengan menggunakan string input sebagai *key*, sistem dapat secara cepat mencari data terkompresi yang sudah pernah diproses. HashTable juga digunakan untuk menyimpan frekuensi karakter unik dari string input.
+* **Binary Search Tree (BST)**: Digunakan untuk merepresentasikan **Huffman Tree**. Setiap node dalam pohon ini merepresentasikan karakter atau gabungan dari karakter, dengan frekuensi kemunculan sebagai nilai prioritas.
+* **Queue**: Digunakan sebagai antrian prioritas untuk membangun Huffman Tree. Node-node dengan frekuensi terendah akan selalu berada di depan antrian.
+
+#### Alur Kerja Sistem
+
+1.  **Input dan Pemeriksaan Cache**:
+    Ketika sebuah string diinput, sistem akan memeriksa **HashTable** untuk melihat apakah string tersebut sudah pernah dikompresi sebelumnya.
+    * Jika string ditemukan, sistem akan langsung mengembalikan hasil kompresi dari cache tanpa menjalankan algoritma Huffman.
+    * Jika string tidak ditemukan, sistem akan melanjutkan ke tahap kompresi.
+
+2.  **Proses Kompresi Huffman**:
+    * **Penghitungan Frekuensi**: Sistem akan menghitung frekuensi setiap karakter unik dalam string input dan menyimpannya dalam HashTable.
+    * **Pembentukan Huffman Tree**: Berdasarkan frekuensi karakter, node-node dibuat dan dimasukkan ke dalam **Queue**. Dua node dengan frekuensi terendah akan selalu digabungkan untuk membentuk node parent baru, hingga seluruh node digabungkan menjadi satu **akar** Huffman Tree.
+    * **Penyandian (Encoding)**: Setelah Huffman Tree terbentuk, sistem menelusuri pohon untuk menghasilkan kode biner untuk setiap karakter.
+    * **Penyimpanan Cache**: Hasil kompresi yang berupa string biner akan disimpan di **HashTable** dengan string input sebagai *key* dan data terkompresi sebagai *value*.
+
+3.  **Output**:
+    Sistem akan mengembalikan hasil kompresi. Mekanisme caching ini memastikan bahwa proses kompresi yang intensif hanya perlu dilakukan satu kali untuk setiap string input yang unik, sehingga meningkatkan efisiensi secara signifikan untuk pemrosesan data yang berulang.
